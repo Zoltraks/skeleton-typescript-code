@@ -8,7 +8,7 @@ Quick start
 
 Create source file with *.ts extension for your program.
 
-Start either with **npm install** or **npm init**.
+Start either with **npm install** or **npm init**. You may also do **npm update** to get newest package versions for your project.
 
 ```
 npm init
