@@ -18,19 +18,20 @@ As entry point specify created *.ts file or leave default **index.js**. This may
 
 ```json
 {
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "ts-loader": "^4.4.2",
     "ts-node": "^7.0.0",
-    "typescript": "^2.9.2"
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.15.0",
+    "webpack-cli": "^3.0.8"
   },
-  "name": "program1",
-  "description": "Create source file with *.ts extension.",
-  "version": "1.0.0",
-  "main": "program1.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "tsc": "tsc"
+  }
 }
 ```
 
@@ -95,3 +96,14 @@ In case of any error, you may want to check your **.vscode/launch.json**.
     ]
 }
 ```
+
+Building
+--------
+
+Use **npm run build** command to build your app.
+
+```
+npm run build
+```
+
+That will use **webpack** to compile and bundle project.
